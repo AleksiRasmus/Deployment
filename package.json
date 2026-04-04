@@ -4,11 +4,12 @@
   "description": "",
   "main": "index.js",
   "type": "module",
-  "scripts": {
-    "test": "echo \"Error: no tests are implemented yet \" && exit 1"
-  },
+ "scripts": {
+  "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+},
   "author": "",
   "license": "MIT",
-  "dependencies": {},
-  "devDependencies": {}
+  "devDependencies": {
+    "jest": "^30.3.0"
+  }
 }
