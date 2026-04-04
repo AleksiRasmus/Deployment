@@ -1,0 +1,13 @@
+import toInteger from "../src/toInteger.js";
+
+test("float to integer", () => {
+  expect(toInteger(4.7)).toBe(4);
+});
+
+test("string to integer", () => {
+  expect(toInteger("10")).toBe(10);
+});
+
+test("NaN to 0", () => {
+  expect(toInteger(NaN)).toBe(0);
+});
