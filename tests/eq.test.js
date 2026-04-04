@@ -11,3 +11,6 @@ test("NaN comparison", () => {
 test("different values", () => {
   expect(eq(5, 6)).toBe(false);
 });
+test("string and number equal", () => {
+  expect(eq("5", 5)).toBe(true);
+});

@@ -10,3 +10,6 @@ test("binary string", () => {
 test("invalid string", () => {
   expect(toNumber("abc")).toBeNaN();
 });
+test("empty string", () => {
+  expect(toNumber("")).toBe(0);
+});

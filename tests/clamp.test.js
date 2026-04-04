@@ -15,3 +15,6 @@ test("clamp exact bounds", () => {
   expect(clamp(1, 1, 10)).toBe(1);
   expect(clamp(10, 1, 10)).toBe(10);
 });
+test("middle value", () => {
+  expect(clamp(7, 1, 10)).toBe(7);
+});

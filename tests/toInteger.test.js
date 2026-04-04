@@ -11,3 +11,6 @@ test("string to integer", () => {
 test("NaN to 0", () => {
   expect(toInteger(NaN)).toBe(0);
 });
+test("negative zero", () => {
+  expect(Object.is(toInteger(-0), -0)).toBe(true);
+});
