@@ -1,6 +1,6 @@
 # Student template
 
-[![Coverage Status](https://coveralls.io/repos/github/AleksiRasmus/Deployment/badge.svg?branch=main)](https://coveralls.io/github/AleksiRasmus/Deployment?branch=main)
+[![Coverage Status](https://coveralls.io/repos/github/AleksiRasmus/Deployment/badge.svg?branch=main&v=1)](https://coveralls.io/github/AleksiRasmus/Deployment?branch=main)
 
 ## Purpose of this repository
 
