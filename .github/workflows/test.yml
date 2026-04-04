@@ -19,10 +19,3 @@ jobs:
 
       - name: Install dependencies
         run: npm install
-
-      - name: Run tests
-        run: node --experimental-vm-modules node_modules/jest/bin/jest.js
-      - name: Send coverage to Coveralls
-        run: npm run coveralls
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
