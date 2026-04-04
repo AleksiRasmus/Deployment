@@ -11,3 +11,7 @@ test("value below range", () => {
 test("value above range", () => {
   expect(clamp(20, 1, 10)).toBe(10);
 });
+test("clamp exact bounds", () => {
+  expect(clamp(1, 1, 10)).toBe(1);
+  expect(clamp(10, 1, 10)).toBe(10);
+});

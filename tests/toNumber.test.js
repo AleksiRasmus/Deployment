@@ -7,3 +7,6 @@ test("string number", () => {
 test("binary string", () => {
   expect(toNumber("0b1010")).toBe(10);
 });
+test("invalid string", () => {
+  expect(toNumber("abc")).toBeNaN();
+});

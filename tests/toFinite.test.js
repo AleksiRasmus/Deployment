@@ -11,3 +11,6 @@ test("Infinity to max finite", () => {
 test("NaN to 0", () => {
   expect(toFinite(NaN)).toBe(0);
 });
+test("negative infinity", () => {
+  expect(toFinite(-Infinity)).toBe(-Number.MAX_VALUE);
+});
