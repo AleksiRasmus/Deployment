@@ -18,3 +18,10 @@ test("clamp exact bounds", () => {
 test("middle value", () => {
   expect(clamp(7, 1, 10)).toBe(7);
 });
+test("NaN input", () => {
+  expect(clamp(NaN, 1, 10)).toBeNaN();
+});
+
+test("string inputs", () => {
+  expect(clamp("5", "1", "10")).toBe(5);
+});

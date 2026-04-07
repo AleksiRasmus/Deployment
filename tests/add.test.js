@@ -15,3 +15,9 @@ test("adds positive and negative number", () => {
 test("adds with zero", () => {
   expect(add(5, 0)).toBe(5);
 });
+test("add NaN", () => {
+  expect(add(NaN, 5)).toBeNaN();
+});
+test("add undefined treated as 0", () => {
+  expect(add(undefined, 5)).toBe(5);
+});

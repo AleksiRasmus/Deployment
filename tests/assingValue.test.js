@@ -5,3 +5,8 @@ test("does not assign same value", () => {
   assignValue(obj, "a", 5);
   expect(obj.a).toBe(5);
 });
+test("assign undefined", () => {
+  const obj = {};
+  assignValue(obj, "a", undefined);
+  expect(obj.a).toBe(undefined);
+});

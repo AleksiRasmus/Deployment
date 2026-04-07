@@ -14,3 +14,10 @@ test("different values", () => {
 test("string and number equal", () => {
   expect(eq("5", 5)).toBe(true);
 });
+test("NaN equals NaN", () => {
+  expect(eq(NaN, NaN)).toBe(true);
+});
+
+test("0 and -0", () => {
+  expect(eq(0, -0)).toBe(true);
+});
