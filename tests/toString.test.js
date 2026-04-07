@@ -14,3 +14,11 @@ test("null", () => {
 test("undefined", () => {
   expect(toString(undefined)).toBe("undefined");
 });
+test("null to string", () => {
+  expect(toString(null)).toBe("null");
+});
+
+test("undefined to string", () => {
+  expect(toString(undefined)).toBe("undefined");
+});
+

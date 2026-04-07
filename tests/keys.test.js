@@ -10,3 +10,4 @@ test("empty object", () => {
 test("object with values", () => {
   expect(keys({a:1,b:2})).toEqual(["a","b"]);
 });
+

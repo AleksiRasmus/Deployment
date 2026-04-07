@@ -17,3 +17,10 @@ test("negative infinity", () => {
 test("zero stays zero", () => {
   expect(toFinite(0)).toBe(0);
 });
+test("Infinity to finite", () => {
+  expect(toFinite(Infinity)).not.toBe(Infinity);
+});
+
+test("NaN to finite", () => {
+  expect(toFinite(NaN)).toBe(0);
+});

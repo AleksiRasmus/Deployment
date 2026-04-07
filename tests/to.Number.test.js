@@ -21,3 +21,6 @@ test("boolean true", () => {
 test("boolean false", () => {
   expect(toNumber(false)).toBe(0);
 });
+test("null to number", () => {
+  expect(toNumber(null)).toBe(0);
+});
