@@ -14,3 +14,10 @@ test("empty string", () => {
 test("invalid string", () => {
   expect(toNumber("abc")).toBeNaN();
 });
+test("boolean true", () => {
+  expect(toNumber(true)).toBe(1);
+});
+
+test("boolean false", () => {
+  expect(toNumber(false)).toBe(0);
+});
