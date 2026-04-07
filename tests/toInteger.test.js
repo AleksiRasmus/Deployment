@@ -25,3 +25,7 @@ test("zero", () => {
 test("string float", () => {
   expect(toInteger("4.9")).toBe(4);
 });
+
+test("large number", () => {
+  expect(toInteger(999.99)).toBe(999);
+});

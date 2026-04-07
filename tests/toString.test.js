@@ -8,7 +8,7 @@ test("array to string", () => {
   expect(toString([1,2,3])).toBe("1,2,3");
 });
 test("null", () => {
-  expect(toString(null)).toBe("null"); // jos näin toimii
+  expect(toString(null)).toBe("null"); 
 });
 
 test("undefined", () => {
@@ -22,3 +22,10 @@ test("undefined to string", () => {
   expect(toString(undefined)).toBe("undefined");
 });
 
+test("nested array", () => {
+  expect(toString([1, [2, 3]])).toBe("1,2,3");
+});
+
+test("symbol to string", () => {
+  expect(toString(Symbol("x"))).toContain("Symbol");
+});
